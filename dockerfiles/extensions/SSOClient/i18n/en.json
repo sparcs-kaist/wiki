@@ -1,0 +1,9 @@
+{
+    "ssoclient": "SPARCS SSO Client",
+    "ssoclient-description": "SPARCS SSO Mediawiki Client",
+    "ssoclient-header-link-text": "SPARCS SSO Login",
+    "ssoclient-login-header": "SPARCS SSO Login",
+    "ssoclient-login-with-sso": "[[$1|Login with SPARCS SSO]]",
+    "ssoclient-youre-already-loggedin": "You're already logged in.",
+    "ssoclient-you-can-login-to-this-wiki-with-sso": "You can login this wiki with your SPARCS SSO account"
+}

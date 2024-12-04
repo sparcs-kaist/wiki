@@ -1,0 +1,35 @@
+{
+    "name": "SSOClient",
+    "version": "1.0",
+    "author": [
+        "[mailto:samjo@sparcs.org Sam Jo]",
+        "[http://dekeijzer.org Joost de Keijzer]",
+        "[https://www.mediawiki.org/wiki/User:Nischayn22 Nischay Nahata]",
+        "[https://star-made.org Schine GmbH]"
+    ],
+    "url": "https://sparcssso.kaist.ac.kr/",
+    "descriptionmsg": "ssoclient-description",
+    "license-name": "LGPL-3.0",
+    "type": "other",
+    "AutoloadClasses": {
+        "SSOClientHooks": "SSOClient.php",
+        "SpecialSSOClient": "SpecialSSOClient.php"
+    },
+    "ExtensionMessagesFiles": {
+        "SSOClientAlias": "SSOClient.alias.php"
+    },
+    "Hooks": {
+        "PersonalUrls": [
+            "SSOClientHooks::onPersonalUrls"
+        ]
+    },
+    "SpecialPages": {
+        "SSOClient": "SpecialSSOClient"
+    },
+    "MessagesDirs": {
+        "MyExtension": [
+            "i18n"
+        ]
+    },
+    "manifest_version": 1
+}

@@ -1,0 +1,39 @@
+name: sparcs-wiki
+services:
+  mediawiki:
+    container_name: wiki
+    build: './dockerfiles'
+    restart: always
+    ports:
+      - 20519:80
+    volumes:
+      - './vol/images:/var/www/html/images'
+      - './config/LocalSettings.php:/var/www/html/LocalSettings.php'
+      - './config/userstyles:/var/www/html/userstyles'
+    networks:
+      - mediawiki
+    depends_on:
+      - database
+
+  database:
+    container_name: wiki-db
+    image: mysql:8
+    restart: always
+    environment:
+      MYSQL_DATABASE: mediawiki
+      MYSQL_USER: mediawiki
+      MYSQL_PASSWORD: CHANGEME
+      MYSQL_ROOT_PASSWORD: CHANGEME
+    volumes:
+      - 'wiki_database:/var/lib/mysql'
+    networks:
+      - mediawiki
+    command: mysqld --character-set-server=utf8 --collation-server=utf8_general_ci
+
+volumes:
+  wiki_database:
+
+networks:
+  mediawiki:
+    external: true
+

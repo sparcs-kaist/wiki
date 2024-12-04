@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700");
+
+@font-face {
+	font-family: 'RIDIBatang';
+	src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/RIDIBatang.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+:root {
+	/* --theme-font: 'RIDIBatang', sans-serif; */
+	--theme-font: 'Noto Sans KR', sans-serif;
+}
+
+.Liberty .content-wrapper .liberty-footer .footer-icons {
+	display: none;
+}
+
+.Liberty .nav-wrapper .navbar .navbar-brand {
+	height: 2.8rem;
+	width: 2.8rem;
+	background: transparent url(/images/logo.png) no-repeat scroll center center/auto 2.3rem;
+}
+
+.social-buttons {
+	display: none;
+}
+
+body {
+	font-family: var(--theme-font);
+}
+
+.liberty-content-main,
+.liberty-content-main h1,
+.liberty-content-main h2,
+.liberty-content-main h3,
+.liberty-content-main h4,
+.liberty-content-main h5,
+.liberty-content-main h6,
+.liberty-content-main b {
+	font-family: var(--theme-font);
+}
+
+#fixed-toc-button {
+	background: #e0e0e0;
+	border: none;
+	border-radius: 0;
+	color: #202020;
+	top: 65px;
+}
+
+.liberty-content-header {
+	border: none !important;
+	background: #f0f0f0 !important;
+	border-radius: 0 !important;
+}
+
+.tools-btn {
+	border-radius: 0;
+	border: 1px solid #f0f0f0;
+}
+
+.toc .toctitle {
+	border-radius: 0 !important;
+}
+
+.toc > ul {
+	border-radius: 0 !important;
+}
+
+.Liberty .content-wrapper .liberty-sidebar .liberty-right-fixed .live-recent .live-recent-header .nav .nav-item .nav-link.active::before,
+.Liberty .content-wrapper .liberty-sidebar .liberty-right-fixed .live-recent .live-recent-header .nav .nav-item .nav-link:hover::before,
+.Liberty .content-wrapper .liberty-sidebar .liberty-right-fixed .live-recent .live-recent-header .nav .nav-item .nav-link:focus::before,
+.Liberty .content-wrapper .liberty-sidebar .liberty-right-fixed .live-recent .live-recent-header .nav .nav-item .nav-link:active::before,
+.Liberty .content-wrapper .liberty-sidebar .liberty-right-fixed .live-recent .live-recent-footer .label,
+.Liberty .content-wrapper .liberty-content .liberty-content-header .content-tools .tools-btn:hover,
+.Liberty .content-wrapper .liberty-content .liberty-content-header .content-tools .tools-btn:focus,
+.Liberty .content-wrapper .liberty-content .liberty-content-header .content-tools .tools-btn:active {
+	background-color: var(--theme-color) !important;
+	color: #202020;
+}
+
+.Liberty .nav-wrapper .navbar .form-inline .btn:hover,
+.Liberty .nav-wrapper .navbar .form-inline .btn:focus {
+	border-color: var(--theme-color) !important;
+}
+
+.Liberty .content-wrapper .liberty-sidebar .liberty-right-fixed .live-recent .live-recent-header .nav .nav-item .nav-link.active::before,
+.Liberty .content-wrapper .liberty-sidebar .liberty-right-fixed .live-recent .live-recent-header .nav .nav-item .nav-link:hover::before,
+.Liberty .content-wrapper .liberty-sidebar .liberty-right-fixed .live-recent .live-recent-header .nav .nav-item .nav-link:focus::before,
+.Liberty .content-wrapper .liberty-sidebar .liberty-right-fixed .live-recent .live-recent-header .nav .nav-item .nav-link:active::before {
+	border-bottom: 2px solid var(--theme-color) !important;
+}
+
+.Liberty .content-wrapper .liberty-sidebar .liberty-right-fixed .live-recent .live-recent-footer .label:hover,
+.Liberty .nav-wrapper .navbar .navbar-nav .nav-item .nav-link:hover,
+.Liberty .nav-wrapper .navbar .navbar-nav .nav-item .nav-link:focus,
+.dropdown-menu .dropdown-item:hover {
+	background-color: var(--theme-color) !important;
+	color: #202020;
+}
+
+.Liberty .nav-wrapper,
+.Liberty .nav-wrapper .navbar .form-inline .btn:hover,
+.Liberty .nav-wrapper .navbar .form-inline .btn:focus,
+.Liberty .nav-wrapper {
+	background-color: #e0e0e0 !important;
+	color: #202020;
+	box-shadow: none;
+}
+
+.Liberty .nav-wrapper .navbar .navbar-nav .nav-item .nav-link {
+	color: #202020;
+}
+
+.Liberty .nav-wrapper .navbar .form-inline .btn {
+	background: transparent;
+}
+
+.Liberty .nav-wrapper .navbar .form-inline .input-group {
+	border-radius: 5px;
+	background: #fff;
+}
+
+.Liberty .nav-wrapper .navbar .form-inline .form-control {
+	background: transparent;
+	border: none;
+	border-radius: 5px;
+}
+
+.Liberty .nav-wrapper .navbar .input-group-btn {
+	padding-right: 3px;
+}
+
+.Liberty .nav-wrapper .navbar .input-group-btn > .btn {
+	border: none;
+	border-radius: 5px !important;
+	height: 1.8rem;
+	display: inline-flex;
+	align-items: center;
+	padding: 0 0.3rem;
+}
+
+.Liberty .nav-wrapper .navbar .input-group-btn > .btn .fa {
+	width: initial;
+}
+
+.Liberty .nav-wrapper .navbar .navbar-login .profile-img {
+	border-radius: 50%;
+}
+
+.navbar-login > .none-outline,
+.navbar-login > .logout-btn {
+	display: none !important;
+}
+
+header {
+	padding-top: 15px;
+}
+
+@media (prefers-color-scheme: dark) {
+	.liberty-content-header {
+		background: #1f2023 !important;
+	}
+}
+
