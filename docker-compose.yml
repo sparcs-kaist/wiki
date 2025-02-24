@@ -2,7 +2,7 @@ name: sparcs-wiki
 services:
   mediawiki:
     container_name: wiki
-    build: .
+    image: ghcr.io/sparcs-kaist/wiki:latest
     restart: always
     ports:
       - 20519:80
