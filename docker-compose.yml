@@ -2,7 +2,7 @@ name: sparcs-wiki
 services:
   mediawiki:
     container_name: wiki
-    build: './dockerfiles'
+    build: .
     restart: always
     ports:
       - 20519:80
